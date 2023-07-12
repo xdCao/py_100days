@@ -25,3 +25,11 @@
 * dumps: 对象 -> json  将对象保存为json字符串
 * load: 文件 -> json -> 对象  从文件中加载json对象
 * loads: json -> 对象  从字符串加载出对象
+
+## day12 正则
+![img.png](img.png)
+![img_1.png](img_1.png)
+![img_2.png](img_2.png)
+
+python通过re模块提供正则的支持，核心函数如下：
+![img_3.png](img_3.png)
