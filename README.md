@@ -83,6 +83,7 @@ python通过re模块提供正则的支持，核心函数如下：
     * OrderedDict：dict的子类，它记录了键值对插入的顺序，看起来既有字典的行为，也有链表的行为。 
     * defaultdict：类似于字典类型，但是可以通过默认的工厂函数来获得键对应的默认值，相比字典中的setdefault()方法，这种做法更加高效。
 * 闭包和作用域
+  * 闭包： https://zhuanlan.zhihu.com/p/22229197
   * Python搜索变量的LEGB顺序（Local >>> Embedded >>> Global >>> Built-in）
   * global和nonlocal关键字的作用 
     * global：声明或定义全局变量（要么直接使用现有的全局作用域的变量，要么定义一个变量放到全局作用域）。 
