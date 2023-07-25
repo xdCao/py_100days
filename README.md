@@ -70,3 +70,33 @@ python通过re模块提供正则的支持，核心函数如下：
   * openpyxl
 * word
   * python-docx(docx)
+
+## day16 python进阶
+* 生成式
+* heapq 堆排序
+* itertools 迭代工具
+* collections
+  * 常用的工具类
+    * namedtuple：命令元组，它是一个类工厂，接受类型的名称和属性列表来创建一个类。 
+    * deque：双端队列，是列表的替代实现。Python中的列表底层是基于数组来实现的，而deque底层是双向链表，因此当你需要在头尾添加和删除元素时，deque会表现出更好的性能，渐近时间复杂度为$O(1)$。 
+    * Counter：dict的子类，键是元素，值是元素的计数，它的most_common()方法可以帮助我们获取出现频率最高的元素。Counter和dict的继承关系我认为是值得商榷的，按照CARP原则，Counter跟dict的关系应该设计为关联关系更为合理。 
+    * OrderedDict：dict的子类，它记录了键值对插入的顺序，看起来既有字典的行为，也有链表的行为。 
+    * defaultdict：类似于字典类型，但是可以通过默认的工厂函数来获得键对应的默认值，相比字典中的setdefault()方法，这种做法更加高效。
+* 闭包和作用域
+  * Python搜索变量的LEGB顺序（Local >>> Embedded >>> Global >>> Built-in）
+  * global和nonlocal关键字的作用 
+    * global：声明或定义全局变量（要么直接使用现有的全局作用域的变量，要么定义一个变量放到全局作用域）。 
+    * nonlocal：声明使用嵌套作用域的变量（嵌套作用域必须存在该变量，否则报错）。
+* 装饰器
+* 魔法属性和方法
+* 混入mixin
+* 元编程和元类
+* 迭代器
+  * 迭代器是实现了迭代器协议的对象。 
+    * Python中没有像protocol或interface这样的定义协议的关键字。 
+    * Python中用魔术方法表示协议。
+    * __iter__和__next__魔术方法就是迭代器协议。
+* 异步 
+  * asyncio
+  * async  wait关键字
+  * aiohttp
